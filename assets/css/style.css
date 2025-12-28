@@ -67,12 +67,13 @@
   /* solid */
 
   --jet: hsl(0, 0%, 22%);
-  /*--onyx: hsl(240, 1%, 17%);*/
+  --onyx: hsl(240, 1%, 17%);
   --main-light: #f9a706;
   --main-dark: #333333;
   --white-1: #F8FBFF;
   --white-2: hsl(0, 0%, 98%);
-  --bg-blue: #E2EDFF; /*hsl(45, 100%, 72%);*/
+  --bg-blue: #E2EDFF;
+  --smoky-black: hsl(0, 0%, 7%);
   --light-blue: #E2EDFF;
   --light-gray: hsl(0, 0%, 84%);
   --light-blue: hsla(0, 0%, 84%, 0.7);
@@ -279,7 +280,7 @@ article.active {
 }
 
 .has-scrollbar::-webkit-scrollbar-track {
-  background: var(--main-light);
+  background: var(--onyx);
   border-radius: 5px;
 }
 
@@ -1837,12 +1838,12 @@ textarea.form-input::-webkit-resizer { display: none; }
    * RESET
    */
 
-  body::-webkit-scrollbar { width: 20px; }
+  body::-webkit-scrollbar { width: 20px; background: var(--smoky-black); }
 
-  body::-webkit-scrollbar-track { background: var(--white-1); }
+  body::-webkit-scrollbar-track { background: var(--smoky-black); }
 
   body::-webkit-scrollbar-thumb {
-    border: 5px solid var(--white-1);
+    border: 5px solid var(--smoky-black);
     background: hsla(0, 0%, 100%, 0.1);
     border-radius: 20px;
     box-shadow: inset 1px 1px 0 hsla(0, 0%, 100%, 0.11),
